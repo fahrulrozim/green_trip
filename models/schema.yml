@@ -10,6 +10,32 @@ models:
           - not_null
       - name: store_and_fwd_flag
         description: Store and Forward Trip
-        test:
+        tests:
           - accepted_values:
-            values: ['Y', 'N']
+              values: ['Y', 'N']
+
+  - name: dim_trip_data_sept_filtered
+    description: The distance for trip in September
+    columns:
+      - name: trip_distance
+        description: Number of distance
+        tests:
+          - not_null
+      - name: store_and_fwd_flag
+        description: Store and Forward Trip (Y for yes, N for no)
+        tests:
+          - accepted_values:
+              values: ['Y', 'N']
+
+  - name: dim_trip_data_oct_filtered
+    description: The distance for trip in October
+    columns:
+      - name: trip_distance
+        description: Number of distance
+        tests:
+          - not_null
+      - name: store_and_fwd_flag
+        description: Store and Forward Trip (Y for yes, N for no)
+        tests:
+          - accepted_values:
+              values: ['Y', 'N']
