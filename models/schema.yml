@@ -5,13 +5,11 @@ models:
     description: The distance for trip in August
     columns:
       - name: trip_distance
+        description: Number of distance
         tests:
           - not_null
-
-  - name: src_trip_data_aug
-    description: Vendor ID from data trip August
-    columns:
-      - name: vendor_id
-        tests:
-          - unique
-          - not-null
+      - name: store_and_fwd_flag
+        description: Store and Forward Trip
+        test:
+          - accepted_values:
+            values: ['Y', 'N']
