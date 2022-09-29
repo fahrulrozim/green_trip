@@ -4,8 +4,8 @@ This is a dbt project using Green Taxi Trip Data in 2021. Reference for the data
 
 Pre-requisite:
 1. Google Cloud Platform:
-  - Google Cloud Storage
-  - Google BigQuery
+    - Google Cloud Storage
+    - Google BigQuery
 2. dbt
 
 How to run:
