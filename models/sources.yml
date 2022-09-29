@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: green_taxi_trip
+    schema: green_taxi_trip
+    tables:
+      - name: trip_data_aug
+        identifier: trip_data_aug
+      - name: trip_data_sept
+        identifier: trip_data_sept
+      - name: trip_data_oct
+        identifier: trip_data_oct
