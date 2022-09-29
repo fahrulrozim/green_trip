@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_trip_data_aug_filtered
+    description: The distance for trip in August
+    columns:
+      - name: trip_distance
+        tests:
+          - not_null
+
+  - name: src_trip_data_aug
+    description: Vendor ID from data trip August
+    columns:
+      - name: vendor_id
+        tests:
+          - unique
+          - not-null
